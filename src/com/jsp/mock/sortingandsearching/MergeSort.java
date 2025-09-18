@@ -22,16 +22,19 @@ public class MergeSort {
 		int j = 0;
 		while (j < right.length) {
 			right[j] = a[i];
-			i++;
 			j++;
+			i++;
 		}
 		sort(left);
 		sort(right);
 		merge(left, right, a);
+
 	}
 
 	public static void merge(int[] a, int[] b, int[] c) {
-		int i = 0, j = 0, k = 0;
+		int i = 0;
+		int j = 0;
+		int k = 0;
 		while (i < a.length && j < b.length) {
 			if (a[i] < b[j]) {
 				c[k++] = a[i++];

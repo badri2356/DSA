@@ -1,6 +1,6 @@
 package com.jsp.mock.stream;
 
-import java.util.Arrays;
+import java.util.Arrays;import java.util.Comparator;
 import java.util.stream.Collectors;
 
 public class FindDuplicateInArray {
@@ -12,7 +12,7 @@ public class FindDuplicateInArray {
 		.collect(Collectors.groupingBy(c->c,Collectors.counting()))
 		.entrySet()
 		.stream()
-		.filter(e->e.getValue()>1)
+		.filter(i->i.getValue()>1)
 		.map(e->e.getKey())
 		.forEach(System.out::println);
 	}

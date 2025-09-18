@@ -8,10 +8,10 @@ public class HigherWord {
 	public static void main(String[] args) {
 		String [] s= {"badri","rakesh","sanatan","sangram","rudrabhisek"};
 		
-		String c=Arrays.stream(s)
+		String result = Arrays.stream(s)
 		.sorted(Comparator.comparing(String::length).reversed())
 		.findFirst()
 		.get();
-		System.out.println(c);
+		System.out.println(result);
 	}
 }

@@ -10,15 +10,15 @@ public class MoveNonZeroElements {
 	}
 
 	public static void moveZero(int[] a) {
-		int index = 0;
-		for (int i = 0; i < a.length; i++) {
-			if (a[i] != 0) {
-				a[index] = a[i];
+		int index=0;
+		for(int i=0;i<a.length;i++) {
+			if(a[i]!=0) {
+				a[index]=a[i];
 				index++;
 			}
 		}
-		for (int j = index; j < a.length; j++) {
-			a[j] = 0;
+		for(int i=index;i<a.length;i++) {
+			a[i]=0;
 		}
 	}
 }
